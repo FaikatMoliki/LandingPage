@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+
+    <title>Code Fashionably</title>
+  </head>
+    <style>
+        body {
+            position: absolute;
+            margin: 0
+        }
+        
+        .ARinterface {
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            
+            width: 100vw;
+            height: 50vw;
+            
+            background: linear-gradient(hsla(0, 0%, 0%, 0.5), transparent);
+            color: white;
+            z-index: 999;
+        }
+        
+        #introduction_header{
+            position: absolute;
+            top: 10vw;
+            left: 10vw;
+            width: 75vw;
+            opacity: 0;
+            font-size: 2em;
+            font-family: 'Nanum Pen Script', cursive;
+            animation: introduction 10s 3;
+        }
+        
+        @keyframes blinking {
+            0%{transform: scale(0.1); opacity: 0;}
+            25% {transform: scale(1); opacity: 1;}
+            30% {transform: scale(1); opacity: 0;}
+            35% {transform: scale(1); opacity: 1;}
+            80% {transform: scale(1); opacity: 1;}
+            100% {transform: scale(1); opacity: 0;}
+        }
+        
+        @keyframes introduction {
+            0%{transform: translateX(-50vw); opacity: 0;}
+            20% {transform: translateX(0vw); opacity: 1;}
+            80% {transform: translateX(0vw); opacity: 1;}
+            100%{transform: translateX(-50vw); opacity: 0;}
+        }
+        
+        .btn-none {
+            background-color: transparent;
+            border: none;
+            color: gray;
+            text-decoration: none;
+        }
+
+        #affiliation {
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+            background-color: black;
+            color: gray;
+            text-decoration: none;
+            text-decoration-color: darkkhaki;
+        }
+    </style>
+  <body>
+      
+    <div class="ARinterface"> <div id="introduction_header"> “And to all little girls, who are watching this, never doubt that you are valuable and powerful and deserving of every chance and opportunity in the world to pursue and achieve your own dreams.”-Hillary Clinton </div>
+      </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="girlscoding.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="fashion.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://source.unsplash.com/p-xSl33Wxyc/1600x900" alt="Third slide">
+        </div>
+      </div>
+    </div>
+      
+       <div class="jumbotron">
+        <h1>Code Fashionably </h1>
+        <p> Coding app to inspire young girls that coding can help them pursue their passions. </p>
+         <a class="btn btn-info btn-lg" href="#" role="button"> Click here to download the app </a>
+        <hr> 
+          <p> <b>Code Fashionably</b> is a coding app to give young girls the opportunity to explore coding in a fun and friendly environment, giving them the chance to express their fashion design skills while gaining some coding skills and interacting with other like-minded players. A lot of girls start out with a love of science and technology, but lose it somewhere along the way, thinking they can't do it. This app is designed specifically to help encourage young girls to believe in themselves. It gives the player the opportunity to <b> learn how to code </b> using various programming languages. The app will give the user the opportunity to <b> dress </b> a model and take her to work. The work options consisted of different tech careers such as a software engineer, programmer, technology associate and more. Another great thing about it is how it gives the player the option to  <b> communicate </b> with other people using the app from different places who they can share their ideas with or get help which will encourage social interactions. </p>
+    </div>
+      <div class="container">
+    Main Feautures
+    <div class="row">
+      <div class="col-sm-4">
+          <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+          <img src="fashion.svg" width="200" height="200" class="figure-img img-fluid rounded" alt="Dress For Work Image"><br> Dress For Work
+        </a>
+      </div>
+        <div class="col-sm-4">  
+        <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+            <img src="coding.svg" width="200" height="200" class="figure-img img-fluid rounded" alt="Learn How To Code Image"> <br> Learn How To Code
+        </a>
+        </div>
+          <div class="col-sm-4 ">
+        <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
+            <img src="communicate.svg" width="200" height="200" class="figure-img img-fluid rounded" alt="Communicate Image"> <br> Communicate
+        </a>
+        </div>
+    </div>
+          <div class="row">
+      <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            The app gives you the opportunity to be able to select a model and dress her up then take her to work where she will learn how to code based on a variety of coding languages.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            The app gives you the opportunity to learn how to code from a variety of coding languages. You will be giving the option to select your preferred language and you're good to start gaining your programming skills!
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <div class="card card-body">
+            You will be giving the opportunity to communicate with other players in case you wish to meet like-minded players or if you need help with anything.
+          </div>
+        </div>
+      </div>
+    </div>
+</div>    
+
+<div class="card text-white mb-3" style="margin-top: 50px;">
+  <img  class="card-img-top"  src="quote.jpg" alt="Card image cap">
+  <div class="card-img-overlay">
+      <blockquote class="blockquote text-center" style="position:absolute; width: 100%; bottom: 3%;">
+    </blockquote>  
+  </div>
+</div>
+
+<hr> 
+      
+<div class="container-fluid" style="margin-top: 50px;">
+<h3> Design process </h3>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          User Research (Interview)
+        </button>
+      </h5>
+    </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <img class="interview" src="interview.jpg">
+          <img class="interview" src="interview1.jpg">
+      </div>
+    </div>
+  </div>
+       <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Brainstorming
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+          <img class="interview" src="brainstorming.jpg">
+      </div>
+    </div>
+  </div>
+     <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Ideation 
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+          <img class="interview" src="ideation.jpg">
+      </div>
+    </div>
+  </div>
+    
+      <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Wireframes + Workflow
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        Coming Soon
+      </div>
+    </div>
+  </div>
+    
+    <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Graphical User Interface
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body">
+        Coming Soon
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header" id="headingSeven">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Pitch Video
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+      <div class="card-body">
+          Coming Soon
+      </div>
+    </div>
+  </div>  
+</div>
+    <footer id="affiliation"> 
+
+        <address>
+        <small>
+            <b> Faikat Moliki </b> at NKU.edu 
+            <br>
+        <strong> FaikatAdeolaMoliki, Lab. </strong><br>
+            400 Nunn Dr. Griffin Hall <br>
+             Heighland Hights, KY, 41099 <br>
+             Northern Kentucky University <br>
+        </small>
+        </address>
+    
+</footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+
+
+</body>
+</html>
+      
