@@ -1,0 +1,467 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Nunito" rel="stylesheet">
+
+    <title>myPeso</title>
+  </head>
+    <style>
+        body {
+            position: absolute;
+            margin: 0
+        }
+        
+        .ARinterface {
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            
+            width: 100vw;
+            height: 100vh;
+            
+            background: linear-gradient(90deg, rgba(255,123,172,.3) 0%, rgba(88,159,159,0.3) 100%);
+            color: white;
+            z-index: 999;
+            }
+        .jumbotron{
+            color:black;
+        }
+        .jumbotron, #h1{
+            font-family:'Nunito', sans-serif;
+        }
+        #introduction_header{
+            position: absolute;
+            top: 10vh;
+            left: 50%;
+            width: 75vw;
+            opacity: 0;
+            font-size: 5em;
+            font-family: 'Nunito', sans-serif;
+            animation: introduction 10s 3;
+        }
+
+        #pointer {
+            position: absolute;
+            top:25vh;
+            left: 50vw;
+            width: 50px;
+            height: 50px;
+            border: 3px solid lightgreen;
+            border-radius: 50%;
+            filter: drop-shadow(1px 1px 1px black);
+            font-size: 1em;
+            line-height: calc(50px - 0.5em);
+            text-align: center;
+            opacity: 0;
+            animation: blinking 2s 3s;
+        }
+        
+        @keyframes blinking {
+            0%{transform: scale(0.1); opacity: 0;}
+            25% {transform: scale(1); opacity: 1;}
+            30% {transform: scale(1); opacity: 0;}
+            35% {transform: scale(1); opacity: 1;}
+            80% {transform: scale(1); opacity: 1;}
+            100% {transform: scale(1); opacity: 0;}
+        }
+        
+        @keyframes introduction {
+            0%{transform: translateX(-50vw); opacity: 0;}
+            20% {transform: translateX(0vw); opacity: 1;}
+            80% {transform: translateX(0vw); opacity: 1;}
+            100%{transform: translateX(-50vw); opacity: 0;}
+        }
+        
+        .btn-none {
+            background-color: transparent;
+            border: none;
+            color: gray;
+            text-decoration: none;
+        }
+
+        #affiliation {
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+            background-color: black;
+            color: gray;
+            text-decoration: none;
+            text-decoration-color: darkkhaki;
+        }
+        .jumbotron a{
+            background: linear-gradient(90deg, rgba(255,123,172,.7) 0%, rgba(88,159,159,0.7) 100%);
+            border:none;
+        }
+        h3, h6{
+            font-family: 'Nunito', sans-serif;
+        }
+        .interview{
+            width:600px;
+            height:300px;
+            padding:1em;
+            display:inline;
+            float:left;
+            
+        }
+        .wire_frames{
+            width:30%;
+            Height:30%;
+            padding:1em;
+            display:inline;
+            float:left;
+        }
+        .work_flow{
+            width:50%;
+            height:50%;
+            padding:1em;
+            display:inline;
+            float:left;
+        }
+        .design_process{
+            text-align: left;
+            padding:1em;
+            display:inline;
+        }
+        .interview_tall{
+            width:300px;
+            height:500px;
+            padding:1em;
+            display:inline;
+            float:left;
+        }
+        #prototype{
+            width:50%;
+            height:50%;
+            padding:1em;
+            display:inline;
+            float:left;
+        }
+        #prototype_2{
+            width:20%;
+            height:20%;
+            padding:1em;
+            display:inline;
+            float:left;
+        }
+        #new_line{
+            display:block;
+            clear:both;
+        }
+    </style>
+  <body>
+      
+      <div class="ARinterface"> <div id="introduction_header"> MANILA <br> PHILIPPINES</div>
+
+        </div> 
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://source.unsplash.com/1600x900/?manila,philippines" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://source.unsplash.com/1600x900/?philippines" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://source.unsplash.com/1600x900/?manila" alt="Third slide">
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+        <h1>myPeso </h1>
+        <p> AR Currency Conversion App for Travelors </p>
+         <a class="btn btn-info btn-lg" href="./my_peso.html" role="button"> Download App</a>
+        <hr> 
+        <p> <b>MyPeso</b> is an Augmented Reality app that helps travelors in the Philippines know exactly what they are paying for in Pesos compared to their own <br>currency. <b>All you have to do is hold your phone to a price tag</b> and myPeso does all the work! MyPeso also shows you where shopping destinations <br>are and where to get your currency exchanged. <b>Have fun </b> and shop to your hearts content knowing exactly what you’re paying! </p>
+    </div>
+      
+    <!--div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <figure class="figure text-center">
+              <img src="PointToKnow.svg" width="200" height="200" class="figure-img img-fluid rounded" alt="Curioxity Explorer point to know feature">
+              <figcaption class="figure-caption text-center">Point to know</figcaption>
+            </figure>
+        </div>
+        <div class="col-sm-4">
+            <figure class="figure text-center">
+                <img src="CaptureMement.svg" width="200" height="200" class="figure-img img-fluid rounded" alt="Curioxity Explorer Capture the moment feature">
+                <figcaption class="figure-caption text-center">Capture the moment</figcaption>
+            </figure>
+        </div>
+        <div class="col-sm-4">
+            <figure class="figure text-center">
+                <img src="CollectNShare.svg" width="200" height="200" class="figure-img img-fluid rounded" alt="Curioxity Explorer Collect and Share feature">
+                <figcaption class="figure-caption text-center"> Collect and Share </figcaption>
+            </figure>
+        </div>
+  </div>
+</div -->  
+
+<div class="container">
+    myPeso Main Features
+    <div class="row">
+      <div class="col-sm-4">
+          <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+          <img src="./shopping_bag.svg" width="200" height="200"  class="figure-img img-fluid rounded" alt="myPeso Shopping Destination Feature"><br>Find Shopping Destinations
+        </a>
+      </div>
+        <div class="col-sm-4">  
+        <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+            <img src="./send.svg" width="200" height="200" class="figure-img img-fluid rounded" alt="myPeso Find Currency Feature"> <br> Send Money
+        </a>
+        </div>
+          <div class="col-sm-4 ">
+        <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
+            <img src="./money.svg" width="200" height="200" class="figure-img img-fluid rounded" alt="myPeso Convert Currency Feature"> <br> Convert Currency
+        </a>
+        </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            Hold your phone up while in walking down the street! myPeso will find direct locations and routes to shopping destinations. You can narrow your search to food, clothing, etc! myPeso does the hard work for you!
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Don't want to pay in cash? No problem, you can use myPeso to send money directly from the app! All you have to do is get the recipient's myPeso account number, it's that easy!
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <div class="card card-body">
+            Don't know what you're paying? myPeso's main feature will convert currency for you. All you have to do is hold myPeso up to any price tag and it wil convert the price into your currency. It takes the stress out of shopping abroad!
+          </div>
+        </div>
+      </div>
+    </div>
+</div>    
+
+
+   
+<div class="card text-white mb-3" style="margin-top: 50px;">
+  <img  class="card-img-top"  src="./manila_pricetag.jpg" alt="Card image cap">
+  <div class="card-img-overlay">
+      
+    <blockquote class="blockquote text-left" style="position:absolute; width: 50%; bottom: 3%; left: 10%; font-family: 'Bree Serif', serif; ">
+      <p class="mb-0">"I never had to worry<br>about calculating the cost<br> myPeso did it for me!"
+    </p>
+      <footer class="blockquote-footer">Interview with <cite title="Source Title">Emily Smith</cite></footer>
+    </blockquote>
+      
+  </div>
+</div>
+
+<hr> 
+      
+<div class="container-fluid" style="margin-top: 50px;">
+<h3> Design process </h3>
+    <h6> The Design & Development of myPeso app </h6>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          User Research & Interviews
+        </button>
+      </h5>
+    </div>
+      
+      <div class="card-body">
+       
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <img class="interview" src="./20181106_113058.jpg">
+      <p class="design_process"> <i><br><br>
+      What do you like about traveling to the Philippines? <br>
+      What are some things you had trouble with while in Manila? <br>
+      What types of things do you like to do when you travel? <br>
+      What would you be concerned about if you traveled to Manila? <br>
+          </i>
+      </p>
+      <br>
+      <p class="design_process">
+      I interviewed several different people with different experiences.<br> One person was born and raised in Manila, <br>one goes there very frequently , one visits every couple years, <br>and one person who has never been. <br>I wanted to get different perspectives on travel and on Manila.
+      </p>
+      <br>
+      <p class="design_process">
+      I found that there was a great convern with safety in Manila. <br>Those who travel there know the safety concerns while <br>those who haven't been are very cautious.<br> I also found a great interest in shopping and finding directions.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Brainstorming
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+       <!-- Insight statement +
+        group discussion + theme +
+        how-might-we questions--->
+        <img class="interview" src="brainstorm.jpg">
+          <img class="interview" src="./dyi.jpg">
+          <i>This app's goal is to use Augmented Reality to better <br>the user experience while Traveling to Manila, Philippines</i>
+          
+          <p class="design_process" id="new_line">
+          <br>While discussing in a group one of the major themes that <br>came about was language barriers. <br>I wanted to focus on a more unique issue to Manila. <br>I looked over some of my interviews and saw that there was a concern with Philippine currency. <br>Pesos value fluxuates very rapidly making it <br> difficult to know what you are paying.
+              
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Ideation 
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        <!--storybording (4-cut cartoon style) and description what happens (user's journey or usage scenario)--->
+          <img class="interview_tall" src="./story.jpg">
+          <img class="interview" src="./story_board.jpg">
+          <p class="design_process"><br>
+          1. The User can convert currency by simply holding their phone up to the price tag. <br> <br>
+          2. The User can convert metric units to imperial units simply by holding their phone up to the unit. <br><br>
+          3. The User can find their way to a specific location by holding their phone up to find a route. <br><br>
+          4. The User could see if their water was safe by holding their phone up to the container and letting the app examine it.<br><br>
+          5. The User could see if a route was safe by holding their phone up and a checkmark or X would appear. 
+          </p>
+          
+          <p class="design_process"> <br> <br> <i>
+          The ultimate goal was to create features that would help the user be safe and make safe decisions while in Manila.</i>
+          </p>
+      </div>
+    </div>
+  </div>
+    
+      <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Wireframes & Workflow
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        <img class="wire_frames" src="./wire_frame_app_Page_1.png">
+          <img class="wire_frames" src="./wire_frame_app_Page_2.png">
+          <img class="wire_frames" src="./wire_frame_app_Page_3.png">
+          <img class="wire_frames" src="./wire_frame_app_Page_4.png">
+          <img class="work_flow" src="./work_flow_app.png">
+          <img class="work_flow" src="./work.jpg">
+        
+          
+      </div>
+    </div>
+  </div>
+    
+    <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Graphical User Interface
+        </button>
+      </h5>
+    </div>
+         
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+       <img src="./icons_Page_1.png" id="prototype">
+          <img src="./icons_Page_2.png" id="prototype">
+          <img src="./icons_Page_3.png" id="prototype">
+        <p class="design_process">
+          I wanted to create a modern and ease of access interface. I wanted muted but fun colors with rounded icons and a sans-serif font.
+          
+          </p>
+      </div>
+    </div>
+  </div>
+    
+        <div class="card">
+    <div class="card-header" id="headingSeven">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Pitch 
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+      <div class="card-body">
+       Check out my video pitch below for myPeso! 
+
+      </div>
+    </div>
+  </div>
+    
+</div>
+
+      
+<hr>
+
+
+    <h3 style="margin-top: 50px;"> Pitch Video Presentation  </h3>
+     
+    <div class="card" style="width: 100%; border-style: none">
+    <div class="card-body">
+      This video will show you how to use myPeso  
+    </div>
+        <figure class="figure text-center">
+             <!-- <iframe src="https://www.youtube.com/watch?v=13kd0aRpQQE" width="100%" height="800"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen  alt="Final pitch presenation video"
+            </iframe>--->
+            <iframe width="901" height="507" src="https://www.youtube.com/embed/13kd0aRpQQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <figcaption class="figure-caption text-center"><a href="https://youtu.be/13kd0aRpQQE">CGH - Chelsea Grace Hitzler</a> from <a href="https://youtu.be/13kd0aRpQQE">Hitzler Inc.</a> on <a href="https://vimeo.com">YouTube</a>.</figcaption>
+            </figure>
+ 
+    </div>
+
+    
+ </div> 
+    
+    
+<footer id="affiliation"> 
+
+        <address>
+        <small>
+            <b> Chelsea Hitzler </b> at NKU.edu 
+            <br>
+        <strong> ChelseaGraceHitzler, Lab. </strong><br>
+            400 Nunn Dr. Griffin Hall <br>
+             Heighland Hights, KY, 41099 <br>
+             Northern Kentucky University <br>
+        </small>
+        </address>
+    
+ </footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
