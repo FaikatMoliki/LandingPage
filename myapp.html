@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-color: #FA8072}
+    
+* {box-sizing: border-box;}
+    
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f8b4ab;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #f8b4ab;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #f8b4ab;
+  color: black;
+  padding: 14px 80px;
+  margin: 8px 0;
+  font-size: 2vh;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+ 
+}
+
+button:hover {
+  opacity:1;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: pink;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f8b4ab;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 800px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+#imgToSwap{
+        width: 80vw;
+        max-width: 700px;
+    }
+    
+.btn-group button {
+  background-color: #f8b4ab; /* Green background */
+  border: 1px solid black; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+}
+  
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #f8b4ab;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+input[type=text], select, textarea {
+  background-color: #f8b4ab;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f8b4ab;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f8b4ab;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+h3 {
+text-align: center;    
+}
+    
+#introduction_header{
+            position: absolute;
+            top: 10vw;
+            left: 10vw;
+            width: 75vw;
+            opacity: 0;
+            font-size: 2em;
+            font-family: 'Arial', cursive;
+            animation: introduction 5s;
+        }
+    @keyframes introduction {
+            0%{transform: translate(-70vw); opacity: 0;}
+            20% {transform: translateX(0vw); opacity: 1;}
+            80% {transform: translateX(0vw); opacity: 1;}
+            100%{transform: translateX(50vw); opacity: 0;}
+        }
+    
+    
+</style>
+    <title>Code Fashionably</title>
+</head>
+    
+<body>    
+    
+<div id="introduction_header">Code Fashionably</div>
+    
+<img src="Mini%20Logo.png" alt="Logo" class="center">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In </button>
+<button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal" style="background-color:#FA8072">
+  <form>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Username" name="uname" required>
+
+      <input type="password" placeholder="Password" name="psw" required>
+    
+      <button id="logInButton" style="width:auto;">Login</button>
+    </div>
+  </form>
+</div>
+    
+    
+<div id="id02" class="modal" style="background-color:#FA8072">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <button type ="button"  onclick="alert('This option will enable the user to create their own avatar/model.')">Model</button>
+        <button onclick="document.getElementById('id07').style.display='block'">Dress</button>
+        <button onclick="document.getElementById('id05').style.display='block'">Work</button>
+        <button onclick="document.getElementById('id04').style.display='block'" >Communicate</button>
+</div>
+  
+    
+<div id="id03" class="modal" style="background-color:#FA8072">
+  <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form>
+    <div class="container">
+      <hr>
+      <input type="text" placeholder="First Name" name="email" required>
+      <input type="password" placeholder="Last Name" name="psw" required>
+      <input type="password" placeholder="Age" name="psw-repeat" required>
+      <input type="password" placeholder="Username" name="psw-repeat" required>
+      <input type="password" placeholder="Password" name="psw-repeat" required>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Done</button>
+      </div>
+    </div>
+  </form>
+</div>
+    
+    
+<div id="id04" class="modal" style="background-color:#FA8072">
+    <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form>
+      <label>Find Friends/Open Messages</label>
+    <select id="country" name="country">
+      <option value="australia">Search for friends</option>
+      <option value="canada">Open Messages</option>
+      </select>
+    <input type="text" id="lname" name="lastname" placeholder="Send To">
+    <textarea id="subject" name="subject" placeholder="Type your message here.." style="height:200px"></textarea>
+    <button type="button" onclick="document.getElementById('id04').style.display='none'" >Submit</button>
+  </form>
+</div>
+    
+<div id="id05" class="modal" style="background-color:#FA8072">
+    <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <button onclick="document.getElementById('id08').style.display='block'">Career</button>
+         <button onclick="document.getElementById('id06').style.display='block'">Learn</button>
+</div>
+    
+<div id="id06" class="modal" style="background-color:#FA8072">
+    <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h3>Pick a coding language</h3>
+        <button type ="button" onclick="alert('Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.The full app will provide more details about it and how to use it.It will come along with practice questions and notes.')">HTML</button>
+        <button type ="button"  onclick="alert('Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.It is a language that describes the style of an HTML document and describes how HTML elements should be displayed.The full app will provide more details about it and how to use it.It will come along with practice questions and notes.')">CSS</button>
+        <button type ="button"  onclick="alert('Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.The full app will provide more details about it and how to use it.It will come along with practice questions and notes.')">JAVA</button>
+        <button type ="button"  onclick="alert('Python is an object-oriented, high-level programming language with integrated dynamic semantics primarily for web and app development.The full app will provide more details about it and how to use it.It will come along with practice questions and notes.')">Python</button>
+           
+</div>
+<div id = "id07" class="modal" style="background-color:#FA8072">
+    <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="image">
+            <img id="imgToSwap" src="Dress1.jpg" alt="Dress">
+        </div>
+        <div class="btnContainer">
+            <button id="reverseBtn">Reverse</button>
+            <button id="changeBtn">Change</button>
+        </div>
+    </div> 
+    
+<div id="id08" class="modal" style="background-color:#FA8072">
+    <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h3>Pick a career</h3>
+        <button type ="button"  onclick="alert('A software developer is a person concerned with facets of the software development process, including the research, design, programming, and testing of computer software.')">Software developer</button>
+        <button type ="button"  onclick="alert('Computer systems analysts study an organizations current computer systems and procedures and design information systems solutions to help the organization operate more efficiently and effectively.')">Computer systems analyst</button>
+        <button type ="button"  onclick="alert('Information technology managers are mainly responsible for planning, coordinating and directing activities that have to do with the computer and information systems of a company. From the hardware to software to the network of an organization, IT managers are in charge of their installation and maintenance.')">IT manager</button>
+        <button type ="button"  onclick="alert('Information security analysts plan and carry out security measures to protect an organizations computer networks and systems.')">Information security analyst</button>
+        <button type ="button"  onclick="alert('Your responsibility as a database administrator (DBA) will be the performance, integrity and security of a database. You will be involved in the planning and development of the database, as well as in troubleshooting any issues on behalf of the users. You will ensure that: data remains consistent across the database.')">Database administrator</button>
+        <button type ="button"  onclick="alert('A Web Developer is responsible for the coding, design and layout of a website according to a companys specifications.')">Web developer</button>
+        <button type ="button"  onclick="alert('Computer network architects design and build data communication networks, including local area networks (LANs), wide area networks (WANs), and Intranets.')">Computer network architect</button>
+        <button type ="button"  onclick="alert('A system administrator, or sysadmin, is a person who is responsible for the upkeep, configuration, and reliable operation of computer systems; especially multi-user computers, such as servers.')">Computer systems administrator</button>  
+</div>
+    
+    
+    
+    
+    
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+const reverseSrc = "Dress1.jpg";
+const changeSrc = "Dress2.jpg";
+
+const imgToSwap = document.querySelector('#imgToSwap');
+const reverseBtn = document.querySelector('#reverseBtn');
+const changeBtn = document.querySelector('#changeBtn');
+    
+reverseBtn.addEventListener('click', function() {swapImageSrc(reverseSrc)});
+changeBtn.addEventListener('click', function() {swapImageSrc(changeSrc)});
+    
+document.querySelector("#logInButton").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById('id02').style.display='block';
+})
+    
+function swapImageSrc(src) {
+        // Take the src provided, and change out the one currently on the image.
+        imgToSwap.src = src;
+    }
+    
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+</body>
+</html>
